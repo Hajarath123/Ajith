@@ -1,0 +1,15 @@
+## checking the current branch
+git branch 
+
+## swith to dev
+git checkout dev
+
+## check the status
+
+git status
+
+## Push the code into dev branch 
+
+git add .
+git commit -am " "
+git push origin dev
