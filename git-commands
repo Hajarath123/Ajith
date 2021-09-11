@@ -1,3 +1,22 @@
+
+## config usercredentials in git globally
+git config --global user.name 
+git config --global user.mail
+
+
+## For insert generate token given by github in  lcal cache.It is good practice.When ever we push the code it asks user credentials.So we just keep token in cache it never asks user credentials until the token was expires.
+git auth login   
+
+## clone reposirit
+git clone <http url or ssh or githubcli link here>
+
+## when ever the following commands will try like creatng branch , merge the branch, delete, push the code into repository.you must go into cloned repository path and you should try the commands
+## create new branch
+git branch <brnch_name>
+
+## Delete branch
+git branch <branch_name> -d
+
 ## checking the current branch
 git branch 
 
@@ -5,11 +24,26 @@ git branch
 git checkout dev
 
 ## check the status
-
 git status
 
 ## Push the code into dev branch 
-
 git add .
 git commit -am " "
 git push origin dev
+
+## merge branches
+git merge <branch_name>
+
+##Create branch and take whole data of any one branch.Just go to taht branch by using git checkout and give following command.
+git branch branch -b <new_branch_name>
+
+## Stash command
+git stash
+
+## Re-take stash data
+git stash --apply
+
+## Set Numbers for every line in Vim 
+set nu
+
+## create new repository when takes server as a host for code 
